@@ -11,3 +11,8 @@ function compare(a,b) {
 objs.sort(compare);
 
 objs.sort((a,b) => (a.last_nom > b.last_nom) ? 1 : ((b.last_nom > a.last_nom) ? -1 : 0)); 
+
+
+#find
+
+let obj = objArray.find(obj => obj.id == 3);
