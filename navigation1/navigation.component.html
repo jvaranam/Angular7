@@ -1,0 +1,32 @@
+<header>
+  <div class="logo">Logo</div>
+  <nav id="nav">
+    <ul (click)="toggleUlLi(event)">
+      <li (click)="toggleUlLi($event)"> <a href="#" class="active">Home</a> </li>
+      <li (click)="toggleUlLi()"> <a href="#">About</a> </li>
+      <li class="sub-menu"> <a href="#">Services</a>
+        <ul>
+          <li (click)="toggleUlLi()"><a href="#">Link 1</a></li>
+          <li (click)="toggleUlLi()"><a href="#">Link 2</a></li>
+          <li (click)="toggleUlLi()"><a href="#">Link 3</a></li>
+          <li (click)="toggleUlLi()"><a href="#">Link 4</a></li>
+        </ul>
+      </li>
+      <li> <a href="#">Team</a> </li>
+      <li class="sub-menu"> <a href="#">Portfolio</a>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </li>
+      <li> <a href="#">Contact</a> </li>
+    </ul>
+  </nav>
+  <div class="menu-toggle" (click)="toggleMenus()">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+</header>
+
+<!-- https://www.youtube.com/watch?v=gt8zOLQ8A0w&t=34s -->
